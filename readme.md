@@ -30,15 +30,16 @@ you may try using a hex editor. The configuration is clearly
 labelled in readable text for this purpose, near the end of the
 EXF file, as shown here (note that offsets may change):
 
-00001510  FE 2D 2D 2D 53 54 41 52 54 20 44 41 54 41 2D 2D  .---START DATA--\
-00001520  00 44 65 6C 61 79 3A 20 28 30 30 35 29 20 73 00  .Delay: (005) s.\
-00001530  00 50 61 74 68 20 74 6F 20 70 69 63 73 3A 00 00  .Path to pics:..\
-00001540  00 5C 41 43 43 45 53 53 4F 52 5C 47 52 41 50 48  .\ACCESSOR\GRAPH\
-00001550  49 43 53 5C 00 00 00 00 00 00 00 00 00 00 00 00  ICS\............\
-00001560  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................\
-00001570  00 00 00 2D 2D 2D 2D 45 4E 44 20 44 41 54 41 2D  ...----END DATA-\
+```
+00001510  FE 2D 2D 2D 53 54 41 52 54 20 44 41 54 41 2D 2D  .---START DATA--
+00001520  00 44 65 6C 61 79 3A 20 28 30 30 35 29 20 73 00  .Delay: (005) s.
+00001530  00 50 61 74 68 20 74 6F 20 70 69 63 73 3A 00 00  .Path to pics:..
+00001540  00 5C 41 43 43 45 53 53 4F 52 5C 47 52 41 50 48  .\ACCESSOR\GRAPH
+00001550  49 43 53 5C 00 00 00 00 00 00 00 00 00 00 00 00  ICS\............
+00001560  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+00001570  00 00 00 2D 2D 2D 2D 45 4E 44 20 44 41 54 41 2D  ...----END DATA-
 00001580  2D 2D 00                                         --.
-
+```
 The delay must be three digits and must fit inside the () set.
 The path must start 16 bytes after the start of the word 'Path' as shown,
 and may be up to 50 characters long. It must end with a backslash and it
